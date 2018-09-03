@@ -2,8 +2,8 @@
 
   <div id="main">
     {{ partial "nav.html" . }}
-    <h1 class="animated flipInX"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-    <p class="post-info animated fadeIn">{{ .FuzzyWordCount }} Words | Approximately {{ .ReadingTime }} Minutes Read | Last Modified on {{ .Lastmod.Format "January 2, 2006" }}
+    <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+    <p class="post-info">{{ .FuzzyWordCount }} Words | Approximately {{ .ReadingTime }} Minutes Read | Last Modified on {{ .Lastmod.Format "January 2, 2006" }}
     {{ .Content }}
 
 
